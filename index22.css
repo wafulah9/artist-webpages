@@ -1,0 +1,229 @@
+/* .greentext{
+   background-color: hsla(240, 83%, 43%, 1.5);
+   color: #fff;
+}
+.greetext{
+    background-color: hsla(66, 86%, 38%, 0.486);
+    color: #911919;
+}
+ol{
+    list-style-type:lower-roman;
+    text-align: center;
+    list-style-position: inside;
+} */
+ /* *{
+    margin: 0;
+    padding: 0;
+ }
+ body{
+
+ }
+/* .img{
+    width: 70%;
+}
+.left{
+    float: right;
+}
+.para{
+    margin: 0;
+    columns: 4;
+    column-rule: 0.1rem solid lightgreen;
+    margin-top: 14px;
+}
+#img{
+    visibility: hidden;
+}
+#btn{
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    border: none;
+    width: 65px;
+    height: 25px;
+    border-radius: 4rem;
+}
+.span{
+    font-size: 2rem;
+    column-span: all;
+    /* white-space: nowrap; */
+/* }  */
+
+/* body{
+    font-family: monospace;
+    display: flex;
+    color: #fff;
+    min-height: 100vh;
+    background-color: aliceblue;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, hsl(106, 63%, 44%), hsl(214, 49%, 50%));
+    margin: 43px 20px;
+} */
+/* div{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 34px;
+} */
+
+/* .slider{
+    position: relative;
+    width: 50%;
+}
+.slider img{
+    width: 100%;
+    display: none;
+} 
+
+img.displayslide{
+    display: block;
+}
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 34px;
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+} */
+
+body{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: hsl(209, 14%, 40%);
+    /* box-sizing: border-box; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+@keyframes fade-in{
+    0% {
+        opacity: 0;
+        transform: translate(15px);
+    }
+    100%{
+        opacity: 100%;
+        transform: translate(0px);
+    }
+}
+.section{
+    margin: auto;
+    margin: 23px 0;
+    width: 500px;
+    height: 400px;
+    background-image: linear-gradient(to bottom, hsl(0, 69%, 45%), hsl(34, 5%, 27%),hsl(135, 100%, 30%));
+    text-align: center;
+    padding-top: 23px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px hsl(0, 0%, 0%);
+    animation: fade-in 0.6s;
+}
+.cityiput{
+    outline: none;
+    background-color: hsl(0, 11%, 77%);
+    font-size: 20px;
+    border: 2px solid;
+    border-radius: 7px;
+    padding-left: 12px;
+    font-weight: 500;
+    height: 30px;
+    width: 200px;
+    transition: all 0.8s;
+}
+.cityiput:hover{
+    background-color: hsl(0, 0%, 100%);
+}
+.cityiput:active{
+    background-color: hsl(0, 0%, 100%);
+}
+.cityiput:focus{
+    background-color: hsl(0, 0%, 100%);
+}
+
+button{
+    background-color: hsl(106, 100%, 28%);
+    font-size: 18px;
+    border: none;
+    border-radius: 7px;
+    height: 30px;
+    transition: all 0.8s;
+}
+button:hover{
+    cursor: pointer;
+    background-color: hsl(106, 100%, 58%);
+}
+button:active{
+    background-color: hsl(106, 100%, 78%);
+}
+button:focus{
+    background-color: hsl(106, 100%, 78%);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 23px;
+    width: 300px;
+    margin: auto;
+    margin-top: 23px;
+    box-shadow: 0 4px 15px #000000;
+    border-radius: 14px;
+    background-image: linear-gradient(to top, hsl(240, 100%, 70%), hsl(60, 100%, 70%));
+}
+.citydisplay{
+    font-weight: 900;
+    font-size: 23px;
+    margin: 0;
+    padding-top: 3px;
+}
+.tempdisplay{
+    font-weight: 600;
+    font-size: 23px;
+    margin: 0;
+    padding-top: 3px;
+}
+.humiditydisplay{
+    font-weight: 500;
+    font-size: 23px;
+    margin: 0;
+    padding-top: 3px;
+}
+.descdisplay{
+    font-weight: 500;
+    font-size: 23px;
+    margin: 0;
+    padding: 0;
+    font-style: oblique;
+}
+.weatherEmoji{
+    font-weight: 900;
+    font-size: 23px;
+    margin: 0;
+    padding-top: 3px;
+}
+@media (max-width: 600px) {
+    .section {
+        width: 95%;
+    }
+    
+    .cityiput, button {
+        width: 90%;
+    }
+
+    .citydisplay,
+    .tempdisplay,
+    .humiditydisplay,
+    .descdisplay,
+    .weatherEmoji {
+        font-size: 1.2em; 
+    }
+}
+
